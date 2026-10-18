@@ -42,7 +42,7 @@
           {{ keyword }}
         </span>
         <button
-          v-if="!showAllKeywords && brand.details.keywords.length > 5"
+          v-if="!showAllKeywords && brand.details.keywords.length > 4"
           type="button"
           class="keyword-toggle status-badge"
           @click="showAllKeywords = true"
