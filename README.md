@@ -8,3 +8,5 @@ A simple brand management application
 
 ## Run
 `yarn dev`
+
+Open `http://localhost:3000` to access the application and you will be redirected to `http://localhost:3000/brands`
