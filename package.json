@@ -1,0 +1,15 @@
+{
+  "name": "brand-giftcard",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "nuxt": "2"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10"
+  }
+}

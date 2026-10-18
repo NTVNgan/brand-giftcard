@@ -1,0 +1,87 @@
+.gift-card-panels {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.gift-panel {
+  padding: 16px;
+}
+.gift-panel__title {
+  margin: 0 0 14px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+.gift-form__field {
+  margin-bottom: 16px;
+}
+.gift-form__field:last-child {
+  margin-bottom: 0;
+}
+.gift-form__row {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 16px;
+  margin-bottom: 16px;
+}
+.gift-form__row .gift-form__field {
+  margin-bottom: 0;
+}
+.choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  cursor: pointer;
+}
+.choice input {
+  margin: 0;
+}
+.amount-button {
+  min-width: 43px;
+  min-height: 30px;
+  padding: 5px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-white);
+  font-size: var(--font-size-sm);
+}
+.amount-button:hover {
+  border-color: var(--color-blue);
+}
+.amount-button__active {
+  border-color: var(--color-blue);
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+.custom-amount__currency {
+  padding: 0 9px;
+  border: 1px solid var(--color-border);
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+  font-size: var(--font-size-sm);
+}
+.custom-amount {
+  margin-top: 20px;
+}
+.custom-amount .form-control {
+  border-radius: 0 4px 4px 0;
+}
+.phone-input__prefix {
+  padding: 0 9px;
+  border: 1px solid var(--color-border);
+  border-right: 0;
+  border-radius: 4px 0 0 4px;
+  font-size: var(--font-size-sm);
+}
+.phone-input .form-control {
+  border-radius: 0 4px 4px 0;
+}
+.gift-message {
+  min-height: 80px;
+  resize: vertical;
+}
+.gift-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
