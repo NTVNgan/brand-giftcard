@@ -1,7 +1,9 @@
 # brand-giftcard
+A simple brand management application
+
+**Prerequisites:** Node: v18
 
 ## Install
-**Node:** v18
 `yarn install`
 
 ## Run
