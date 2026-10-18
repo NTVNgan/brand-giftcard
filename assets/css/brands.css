@@ -83,18 +83,24 @@
   font-weight: var(--font-weight-medium);
   color: var(--color-text-secondary);
 }
+.brands-list__loading {
+  opacity: 0.55;
+  pointer-events: none;
+}
 /* Responsive */
-@media (max-width: 1100px) {
+@media (max-width: 1199px) {
   .brand-card__logo {
     padding: 40px;
     height: 150px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 990px) {
   .brand-card__logo {
-    padding: 20px;
+    padding: 25px;
     height: 100px;
   }
+}
+@media (max-width: 490px) {
   .pagination {
     flex-direction: column-reverse;
   }

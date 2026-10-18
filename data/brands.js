@@ -8,7 +8,7 @@ const createGiftCard = () => ({
   recipientPhone: '',
   deliveryTime: 'immediate',
   deliveryDate: null,
-  period: '',
+  period: 'morning',
   message: '',
 })
 
@@ -180,7 +180,28 @@ const originalBrands = [
       }
     },
     giftCard: createGiftCard(),
-  }
+  },
+  {
+    id: 9,
+    name: 'Amazon',
+    logo: '/images/brands/amazon.svg',
+    status: 'inactive',
+    country: 'Singapore',
+    products: 400,
+    details: {
+      company: 'XYZ Limited',
+      category: 'Other Gifts',
+      phone: '+123 4455 6677 8899',
+      keywords: ['grab', 'grab gift', 'clothing', 'promo code', 'gift card', 'discount', 'food', 'transport'],
+      socialNetworks: {
+        website: '#',
+        facebook: '#',
+        instagram: '#',
+        twitter: '#'
+      }
+    },
+    giftCard: createGiftCard(),
+  },
 ]
 
 export const brands = Array.from({ length: 198 }, (_, index) => {

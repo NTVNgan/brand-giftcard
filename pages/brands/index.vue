@@ -1,7 +1,7 @@
 <template>
   <div class="page-container brands-page">
     <h1 class="page-title">Brands</h1>
-    <div class="brands-list grid grid-cols-4 lg-grid-cols-3 md-grid-cols-2 sm-grid-cols-1 gap-7 md-gap-5">
+    <div class="brands-list grid grid-cols-4 lg-grid-cols-2 sm-grid-cols-1 gap-7 md-gap-5">
       <BrandCard v-for="brand in paginatedBrands" :key="brand.id" :brand="brand" />
     </div>
     <div class="pagination flex items-center justify-between gap-4">

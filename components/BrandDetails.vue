@@ -42,19 +42,19 @@
           {{ keyword }}
         </span>
         <button
-          v-if="brand.details.keywords.length > 5"
+          v-if="!showAllKeywords && brand.details.keywords.length > 5"
           type="button"
           class="keyword-toggle status-badge"
-          @click="showAllKeywords = !showAllKeywords"
+          @click="showAllKeywords = true"
         >
-          {{ showAllKeywords ? 'Show less' : `+${brand.details.keywords.length - 5}` }}
+          +{{ brand.details.keywords.length - 4 }}
         </button>
       </div>
     </div>
     <div class="brand-info__socials">
-      <a v-for="social in socialLinks" :key="social.name" :href="social.url" target="_blank">{{
-        social.label
-      }}</a>
+      <a v-for="social in socialLinks" :key="social.name" :href="social.url" target="_blank">
+        <img :src="social.icon" :alt="social.name" />
+      </a>
     </div>
   </div>
 </template>
@@ -76,17 +76,16 @@ export default {
   computed: {
     visibleKeywords() {
       const keywords = this.brand.details.keywords
-      return this.showAllKeywords ? keywords : keywords.slice(0, 5)
+      return this.showAllKeywords ? keywords : keywords.slice(0, 4)
     },
 
     socialLinks() {
       const networks = this.brand.details.socialNetworks
-      console.log('networks', networks)
       return [
-        { name: 'Website', label: '@', url: networks.website },
-        { name: 'Facebook', label: 'f', url: networks.facebook },
-        { name: 'Instagram', label: '@', url: networks.instagram },
-        { name: 'Twitter', label: '@', url: networks.twitter },
+        { name: 'Website', icon: '/images/socials/website-globe.svg', url: networks.website },
+        { name: 'Facebook', icon: '/images/socials/facebook.svg', url: networks.facebook },
+        { name: 'Instagram', icon: '/images/socials/instagram.svg', url: networks.instagram },
+        { name: 'Twitter', icon: '/images/socials/twitter.svg', url: networks.twitter },
       ]
     },
   },

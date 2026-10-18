@@ -76,7 +76,14 @@
   justify-content: space-around;
   align-items: center;
   gap: 10px;
-  padding: 12px;
+  padding: 20px;
+}
+.brand-info__socials a {
+  height: 20px;
+}
+.brand-info__socials img {
+  width: 20px;
+  height: 100%;
 }
 @media (max-width: 960px) {
   .brand-detail-layout {
@@ -87,5 +94,21 @@
 @media (max-width: 767px) {
   .brand-detail-layout {
     grid-template-columns: minmax(0, 1fr);
+  }
+  .brand-info__logo {
+    height: 100px;
+    padding: 20px;
+  }
+  .brand-info__main {
+    padding: 15px 0;
+  }
+  .brand-info__name {
+    margin-bottom: 5px;
+  }
+  .brand-info__details, .brand-info__keywords, .brand-info__socials {
+    padding: 14px;
+  }
+  .brand-info__details {
+    gap: 5px;
   }
 }

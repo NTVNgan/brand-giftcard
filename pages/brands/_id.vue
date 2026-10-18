@@ -14,6 +14,8 @@ import BrandDetails from '~/components/BrandDetails.vue'
 import GiftCardForm from '~/components/GiftCardForm.vue'
 
 export default {
+  components: { BrandDetails, GiftCardForm },
+
   asyncData({ params }) {
     const brand = brands.find((item) => item.id === Number(params.id))
     return { brand }

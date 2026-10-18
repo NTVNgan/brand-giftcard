@@ -12,7 +12,7 @@
   font-weight: var(--font-weight-bold);
 }
 .gift-form__field {
-  margin-bottom: 16px;
+  margin-bottom: 30px;
 }
 .gift-form__field:last-child {
   margin-bottom: 0;
@@ -38,12 +38,13 @@
 }
 .amount-button {
   min-width: 43px;
-  min-height: 30px;
+  min-height: 38px;
   padding: 5px 10px;
   border: 1px solid var(--color-border);
   border-radius: 4px;
   background: var(--color-white);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
 }
 .amount-button:hover {
   border-color: var(--color-blue);
@@ -54,11 +55,13 @@
   color: var(--color-white);
 }
 .custom-amount__currency {
+  width: 38px;
   padding: 0 9px;
   border: 1px solid var(--color-border);
   border-right: 0;
   border-radius: 4px 0 0 4px;
   font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
 }
 .custom-amount {
   margin-top: 20px;
@@ -84,4 +87,23 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 12px;
+}
+@media (max-width: 960px) {
+  .gift-form__row {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+@media (max-width: 767px) {
+  .gift-panel {
+    padding: 14px;
+  }
+  .gift-panel__title {
+    margin-bottom: 10px;
+  }
+  .gift-form__field {
+    margin-bottom: 15px;
+  }
+  .custom-amount {
+    margin-top: 10px;
+  }
 }
